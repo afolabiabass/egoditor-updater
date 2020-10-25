@@ -34,6 +34,12 @@ This will open the server's Crontab file. The code below can be pasted into the 
 ```
 * * * * * cd /path-to/egoditor-updater && php artisan schedule:run >> /dev/null 2>&1
 ```
+## Tests
+
+Run the application test with the command below
+```
+php artisan test
+```
 
 ## Authors
 

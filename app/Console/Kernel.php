@@ -2,6 +2,10 @@
 
 namespace App\Console;
 
+use App\Console\Commands\FetchCommand;
+use App\Console\Commands\ProcessCommand;
+use App\Console\Commands\UnzipCommand;
+use App\Console\Commands\UpdaterCommand;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -17,7 +21,10 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        //
+        FetchCommand::class,
+        ProcessCommand::class,
+        UnzipCommand::class,
+        UpdaterCommand::class
     ];
 
     /**

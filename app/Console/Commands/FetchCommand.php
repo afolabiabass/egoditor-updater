@@ -49,5 +49,6 @@ class FetchCommand extends Command
         // dispatch fetching job
         FetchCSVJob::dispatch($url, $progress);
         $progress->finish();
+        $this->info('File download completed!');
     }
 }

@@ -49,5 +49,6 @@ class UnzipCommand extends Command
         // dispatch unzipping job
         UnzipCSVJob::dispatch($path, $progress);
         $progress->finish();
+        $this->info('File unzipping completed!');
     }
 }

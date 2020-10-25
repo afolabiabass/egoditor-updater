@@ -49,5 +49,6 @@ class ProcessCommand extends Command
         // dispatch csv process job
         ProcessCSVJob::dispatch($path, $progress);
         $progress->finish();
+        $this->info('File processed completed!');
     }
 }
