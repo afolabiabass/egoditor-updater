@@ -38,12 +38,8 @@ class FetchCSVJob implements ShouldQueue
      */
     public function __construct($url, &$progress)
     {
-        $this->url = "https://db-ip.com/account/adcda1fff413ac2395a751f7cb7fdd28706cc197/db/ip-to-location-isp/";
-        // use url if set else use default
         // this is set from the command line request
-        if ($url) {
-            $this->url = $url;
-        }
+        $this->url = $url;
         self::$progress = &$progress;
     }
 

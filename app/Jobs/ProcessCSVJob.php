@@ -70,6 +70,7 @@ class ProcessCSVJob implements ShouldQueue
         ->each(function ($rows) {
             foreach ($rows as $row) {
                 self::$progress->advance();
+                // replace with where data needs to be persisted to.
                 Statistics::create([
                     'ip_address' => $row[0][0] ?? null,
                     'subnet_mask' => $row[1][0] ?? null,

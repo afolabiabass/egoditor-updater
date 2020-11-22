@@ -16,14 +16,14 @@ class UpdaterCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'dpip:update';
+    protected $signature = 'csv:update';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Run the dpip update processes';
+    protected $description = 'Run the csv update processes';
 
     /**
      * Create a new command instance.
@@ -42,12 +42,12 @@ class UpdaterCommand extends Command
      */
     public function handle()
     {
-        Artisan::call('dpip:fetch', [], $this->getOutput());
+        Artisan::call('csv:fetch', [], $this->getOutput());
         sleep(1);
 
-        Artisan::call('dpip:unzip', [], $this->getOutput());
+        Artisan::call('csv:unzip', [], $this->getOutput());
         sleep(1);
 
-        Artisan::call('dpip:process', [], $this->getOutput());
+        Artisan::call('csv:process', [], $this->getOutput());
     }
 }

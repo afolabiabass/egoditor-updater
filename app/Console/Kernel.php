@@ -35,9 +35,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-         $schedule->command('dpip:fetch')->dailyAt('05:00');
-         $schedule->command('dpip:unzip')->dailyAt('06:00');
-         $schedule->command('dpip:process')->dailyAt('07:00');
+         $schedule->command('csv:fetch')->dailyAt('05:00');
+         $schedule->command('csv:unzip')->dailyAt('06:00');
+         $schedule->command('csv:process')->dailyAt('07:00');
     }
 
     /**

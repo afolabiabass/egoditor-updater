@@ -16,7 +16,7 @@ class UnzipCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'dpip:unzip {--path=}';
+    protected $signature = 'csv:unzip {--path=}';
 
     /**
      * The console command description.

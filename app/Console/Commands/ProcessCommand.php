@@ -16,7 +16,7 @@ class ProcessCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'dpip:process {--path=}';
+    protected $signature = 'csv:process {--path=}';
 
     /**
      * The console command description.

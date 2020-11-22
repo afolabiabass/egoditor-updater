@@ -16,7 +16,7 @@ class FetchCommand extends Command
      *
      * @var string
      */
-    protected $signature = 'dpip:fetch {--url=}';
+    protected $signature = 'csv:fetch {--url}';
 
     /**
      * The console command description.

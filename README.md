@@ -19,7 +19,7 @@ php artisan migrate
 
 - You can finally do a quick run of the updater using the command below 
 ```
-php artisan dpip:update
+php artisan update
 ```
 
 - Finally, to set up the scheduler on the server run the command below
